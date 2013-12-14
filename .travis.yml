@@ -8,6 +8,7 @@ php:
   - hhvm
 
 before_script:
+    - sudo apt-get install parallel
     - COMPOSER_ROOT_VERSION=dev-master composer --prefer-source --dev install
 
 script:
